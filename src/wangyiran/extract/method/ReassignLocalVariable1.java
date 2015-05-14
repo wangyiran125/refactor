@@ -5,21 +5,28 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
+ *
  * Created by wyr on 2015/5/14.
  */
-public class NotExtractMethod1 {
-
-    List<Double> _orders = new ArrayList<>();
+public class ReassignLocalVariable1 {
     private String _name;
+    List<Double> _orders = new ArrayList<>();
     public void printOwing(double amount){
-        Iterator<Double> e = _orders.iterator();
-        double outstanding = 0.0;
         printBanner();
+        printBanner();
+        //reassign a local variable
+        double outstanding = getOutStanding();
+        printDetails(amount);
+    }
+
+    private double getOutStanding() {
+        double outstanding = 0.0;
+        Iterator<Double> e = _orders.iterator();
         while (e.hasNext()){
             double each = e.next();
             outstanding += each;
         }
-        printDetails(amount);
+        return outstanding;
     }
 
     private void printDetails(double amount) {
