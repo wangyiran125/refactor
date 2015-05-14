@@ -1,4 +1,4 @@
-package wangyiran.extract.method;
+package wangyiran.composing.method;
 
 /**
  * Created by wyr on 2015/5/14.

@@ -1,4 +1,4 @@
-package wangyiran.extract.method;
+package wangyiran.composing.method;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -8,27 +8,25 @@ import java.util.List;
  *
  * Created by wyr on 2015/5/14.
  */
-public class NotInlineTemp2 {
+public class ReassignLocalVariable1 {
     private String _name;
     List<Double> _orders = new ArrayList<>();
-    public void printOwing(double previousAmount){
-        //temp tend to encourage longer method,because that's the only way you can reach the temp
-        double outstanding = previousAmount * 1.2;
+    public void printOwing(double amount){
         printBanner();
         printBanner();
         //reassign a local variable
-        outstanding = getOutStanding(outstanding);
-        printDetails(previousAmount);
+        double outstanding = getOutStanding();
+        printDetails(amount);
     }
 
-    private double getOutStanding(double initialValue) {
-        double result = initialValue;
+    private double getOutStanding() {
+        double outstanding = 0.0;
         Iterator<Double> e = _orders.iterator();
         while (e.hasNext()){
             double each = e.next();
-            result += each;
+            outstanding += each;
         }
-        return result;
+        return outstanding;
     }
 
     private void printDetails(double amount) {

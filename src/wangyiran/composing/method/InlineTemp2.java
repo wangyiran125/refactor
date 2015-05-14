@@ -1,4 +1,4 @@
-package wangyiran.extract.method;
+package wangyiran.composing.method;
 
 import java.util.ArrayList;
 import java.util.Iterator;
