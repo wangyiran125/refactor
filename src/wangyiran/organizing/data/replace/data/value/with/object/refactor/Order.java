@@ -15,7 +15,7 @@ public class Order {
     }
 
     private Customer _customer;
-    public String get_customerName() {
+    public String get_customer() {
         return _customer.get_name();
     }
 
