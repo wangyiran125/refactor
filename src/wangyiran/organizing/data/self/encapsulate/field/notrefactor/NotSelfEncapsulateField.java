@@ -1,4 +1,4 @@
-package wangyiran.organizing.data.notrefactor;
+package wangyiran.organizing.data.self.encapsulate.field.notrefactor;
 
 /**
  * Created by wyr on 2015/5/18.

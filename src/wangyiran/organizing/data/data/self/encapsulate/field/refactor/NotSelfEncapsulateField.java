@@ -1,4 +1,4 @@
-package wangyiran.organizing.data.refactor;
+package wangyiran.organizing.data.data.self.encapsulate.field.refactor;
 
 /**
  * Created by wyr on 2015/5/18.
