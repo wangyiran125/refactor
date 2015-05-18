@@ -8,10 +8,10 @@ import java.util.Date;
 public class Client {
     private static  Date previousEnd;
     public static void main(String[] args) {
-        Date newStart = nextDate();
+        Date newStart = getDate();
     }
 
-    private static Date nextDate() {
+    private static Date getDate() {
         return new Date(previousEnd.getYear(),previousEnd.getMonth(),previousEnd.getDate()+1);
     }
 }
