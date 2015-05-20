@@ -7,7 +7,7 @@ package wangyiran.organizing.data.replace.type.code.with.stateOrstrategy.refacto
 //I now create the subclasses:
 public class Engineer extends EmployeeType{
     @Override
-    int getTypeCode() {
-        return Employee.ENGINEER;
+    protected int getTypeCode() {
+        return EmployeeType.ENGINEER;
     }
 }

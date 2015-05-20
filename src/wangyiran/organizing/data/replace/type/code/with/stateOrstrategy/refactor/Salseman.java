@@ -5,7 +5,7 @@ package wangyiran.organizing.data.replace.type.code.with.stateOrstrategy.refacto
  */
 public class Salseman extends EmployeeType{
     @Override
-    int getTypeCode() {
-        return Employee.SALESMAN;
+    protected int getTypeCode() {
+        return EmployeeType.SALESMAN;
     }
 }

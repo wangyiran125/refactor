@@ -5,7 +5,7 @@ package wangyiran.organizing.data.replace.type.code.with.stateOrstrategy.refacto
  */
 public class Manager extends EmployeeType{
     @Override
-    int getTypeCode() {
-        return Employee.MANAGER;
+    protected int getTypeCode() {
+        return EmployeeType.MANAGER;
     }
 }
