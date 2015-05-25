@@ -8,7 +8,7 @@ public class LaborItem extends JobItem{
 //        super(_unitPrice, _quantity, _isLabor, _employee);
 //    }
 
-    public LaborItem(int _unitPrice, int _quantity, boolean _isLabor, Employee employee) {
+    public LaborItem(int _unitPrice, int _quantity, Employee employee) {
         super(_unitPrice,_quantity);
         _employee = employee;
     }

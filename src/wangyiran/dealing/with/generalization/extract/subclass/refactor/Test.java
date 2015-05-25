@@ -7,6 +7,6 @@ package wangyiran.dealing.with.generalization.extract.subclass.refactor;
 public class Test {
     public static void main(String[] args) {
        Employee kent = new Employee(4);
-       JobItem jobItem = new JobItem(0,5,true,kent);
+       LaborItem jobItem = new LaborItem(0,5,kent);
     }
 }
